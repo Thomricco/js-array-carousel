@@ -36,7 +36,7 @@ button.addEventListener('click', function() {
     if (currentIndex > images.length - 1) {
         currentIndex = 0;
     }
-    titololiList = titoli[currentIndex];
-    testiList = testi[currentIndex];
-    boxImg = images[currentIndex];
+    titololiList.innerHTML = titoli[currentIndex];
+    testiList.innerHTML = testi[currentIndex];
+    boxImg.src = images[currentIndex];
 });

@@ -14,16 +14,16 @@ const images = [
 let currentIndex = 0;
 
 
-const titoliList = document.querySelector('.titolo');
+const titololiList = document.querySelector('.titolo');
 const testiList = document.querySelector('.testo');
 const boxImg = document.querySelector('.box-img');
 
 const button = document.querySelector('.next');
 
 
-titololiList = titoli[currentIndex]
-testiList = testi[currentIndex]
-boxImg.src = images[currentIndex]
+titololiList.innerHTML = titoli[currentIndex];
+testiList.innerHTML = testi[currentIndex];
+boxImg.src = images[currentIndex];
 
 button.addEventListener('click', function() {
     currentIndex++;
@@ -36,7 +36,7 @@ button.addEventListener('click', function() {
     if (currentIndex > images.length - 1) {
         currentIndex = 0;
     }
-    titoliList = titoli[currentIndex];
+    titololiList = titoli[currentIndex];
     testiList = testi[currentIndex];
     boxImg = images[currentIndex];
 });
